@@ -37,7 +37,9 @@ const PortfolioProjectDetails = ({ project }: any) => {
 };
 export const getServerSideProps = async (context: any) => {
   const { params } = context;
-  const res = await fetch(`http://localhost:3000/api/projects/${params._id}`);
+  const res = await fetch(
+    `http://akash-rahman.vercel.app/api/projects/${params._id}`
+  );
   const project = await res.json();
 
   return {
