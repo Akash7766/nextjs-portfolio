@@ -25,7 +25,7 @@ export default AboutPage;
 
 export async function getStaticProps() {
   // Fetch data from external API
-  const res = await fetch(`http://akash-rahman.vercel.app/api/services`);
+  const res = await fetch(`http://localhost:3000/api/services`);
   const services = await res.json();
 
   // Pass services to the page via props
