@@ -1,5 +1,5 @@
 import React from "react";
-import { IProject } from "../../../@shared/interfaces/_project_interface";
+import { IProject } from "../../@shared/interfaces/_project_interface";
 
 interface Iprops {
   project: IProject;
