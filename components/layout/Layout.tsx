@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import React from "react";
 
@@ -17,7 +19,7 @@ const Layout = ({ children }: any) => {
                 htmlFor="my-drawer-2"
                 className="btn bg-transparent outline-none border-none hover:bg-transparent drawer-button lg:hidden"
               >
-                <i className="fa-solid fa-bars text-xl"></i>
+                <FontAwesomeIcon icon={faBars} />
               </label>
             </button>
           </div>
