@@ -15,11 +15,18 @@ const PortfolioProjects = ({ project }: Iprops) => {
       <div className={`${style.projects_title}`}>
         <div className="text-center">
           <h2 className="text-2xl mb-5">{name}</h2>
-          <Link href={Paths.ProjetDetails(_id)}>
-            <button className="btn btn-outline btn-info rounded-none uppercase">
-              Project Details
-            </button>
-          </Link>
+          <div className="flex gap-2">
+            <a href={project.live_link} target="_blank" rel="noreferrer">
+              <button className="btn btn-outline btn-info rounded-none uppercase">
+                Live Link
+              </button>
+            </a>
+            <Link href={Paths.ProjetDetails(_id)}>
+              <button className="btn btn-outline btn-warning rounded-none uppercase">
+                Project Details
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

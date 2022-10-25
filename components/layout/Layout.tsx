@@ -2,6 +2,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import React from "react";
+import { MenuItems } from "../../@shared/constant/Menu-items";
+import {
+  FaHome,
+  FaTelegramPlane,
+  FaBookOpen,
+  FaFile,
+  FaLaptopCode,
+  FaUserAlt,
+} from "react-icons/fa";
 
 const Layout = ({ children }: any) => {
   return (
@@ -36,31 +45,61 @@ const Layout = ({ children }: any) => {
               <>
                 <li className="border-b py-1">
                   <Link href={item.menu_link} passHref>
-                    <i className={item.icon}></i>
-                    {item.menu_name}
+                    <>
+                      <i className={item.icon}></i>
+                      {item.menu_name}
+                    </>
                   </Link>
                 </li>
               </>
             ))} */}
             <li className="border-b py-1">
               <Link href="/" className="border-b py-1">
-                Home
+                <a>
+                  <FaHome />
+                  Home
+                </a>
               </Link>
             </li>
             <li className="border-b py-1">
-              <Link href="/about">About</Link>
+              <Link href="/about">
+                <a>
+                  <FaUserAlt />
+                  About
+                </a>
+              </Link>
             </li>
             <li className="border-b py-1">
-              <Link href="/resume">Resume</Link>
+              <Link href="/resume">
+                <a>
+                  <FaFile />
+                  Resume
+                </a>
+              </Link>
             </li>
             <li className="border-b py-1">
-              <Link href="/portfolio">Portfolio</Link>
+              <Link href="/portfolio">
+                <a>
+                  <FaLaptopCode />
+                  Portfolio
+                </a>
+              </Link>
             </li>
             <li className="border-b py-1">
-              <Link href="/blog">Blogs</Link>
+              <Link href="/blog">
+                <a>
+                  <FaBookOpen />
+                  Blog
+                </a>
+              </Link>
             </li>
             <li className="border-b py-1">
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact">
+                <a>
+                  <FaTelegramPlane />
+                  Contact
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
