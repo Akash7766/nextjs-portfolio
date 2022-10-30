@@ -4,7 +4,7 @@ const HomeDescription = () => {
   return (
     <>
       <h2 className="text-lg text-[#fff] mb-2">
-        I am a Frontend Web Developer
+        I am a Frontend Web Developer.
       </h2>
       <h1
         className="text-info text-4xl sm:text-6xl font-bold mb-4"
